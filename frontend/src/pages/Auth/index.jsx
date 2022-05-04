@@ -84,7 +84,7 @@ const Login = () => {
                     <Link href="/register">
                       <a className="py-4 px-6 w-full text-center border-b border-black mb-8">Forgot your password?</a>
                     </Link>
-                    <Link href="/register">
+                    <Link href="/Auth/register">
                       <a className="py-3 px-6 w-full text-center bg-green-600 text-white rounded-md">Register</a>
                     </Link>
                   </form>
