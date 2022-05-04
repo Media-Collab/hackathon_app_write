@@ -1,9 +1,9 @@
 const loginController = {};
 
 loginController.getData = async (req, res) => {
-    // const users = await UserModel.find();
-  
-    res.send('users');
-  };
+  // const users = await UserModel.find();
 
-  module.exports = usersController;
+  res.send("users");
+};
+
+module.exports = loginController;
