@@ -1,7 +1,7 @@
 const express = require("express");
 
-const blobsRouter = require("./blobs.controller");
-const loginRouter = require("./login.controller");
+const blobsRouter = require("./blobs.router");
+const loginRouter = require("./login.router");
 
 function routerApi(app) {
   const router = express.Router();

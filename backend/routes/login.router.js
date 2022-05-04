@@ -2,10 +2,11 @@ const { Router } = require("express");
 const router = Router();
 
 const {
-    getData
+    getData,
+    postData
 } = require('../controllers/login.controller');
 
-router.route('/').get(getData);
+router.route('/').get(getData).post(postData);
 
 // router.post('/register', async (req, res) => {
 //     const user = req.body.user;
