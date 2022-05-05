@@ -1,15 +1,15 @@
-const express = require("express");
-const router = express.Router();
+const { Router } = require("express");
+const router = Router();
 
-router.get("/", (req, res) => {
-  res.send("To get blobs");
-});
-router.get("/main", (req, res) => {
-  res.send("Probando route");
-});
+const {
+    getAll, 
+    getOne,
+    postBlob,
+    updateBlob,
+    deleteBlob,
+} = require('../controllers/blobs.controller');
 
-router.post("/", (req, res) => {
-  res.end("To save blobs");
-});
+router.route('/').get(getAll).post(postBlob)
+router.route('/:id').get(getOne).put(updateBlob).delete(deleteBlob)
 
 module.exports = router;
