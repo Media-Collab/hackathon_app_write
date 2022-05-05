@@ -1,3 +1,6 @@
+const sdk = require('node-appwrite');
+const db = require('./database')
+
 const blobsController = {};
 
 
@@ -6,7 +9,7 @@ blobsController.getAll = (req, res) => {
 };
 
 blobsController.getOne = (req, res) => {
-    res.end(`get ${req.params.id}`);
+    res.end(`get ${req.params.blobId} from user ${req.params.userId}`);
 }
 
 blobsController.postBlob = (req, res) => {
@@ -14,11 +17,11 @@ blobsController.postBlob = (req, res) => {
 };
 
 blobsController.deleteBlob = (req, res) => {
-    res.end(`delete ${req.params.id}`);
+    res.end(`delete ${req.params.blobId}`);
 };
 
 blobsController.updateBlob = (req, res) => {
-    res.end('update');
+    res.end(`update ${req.params.blobId}`);
 };
 
 
