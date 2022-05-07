@@ -7,3 +7,37 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+
+.container {
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    text-align:center;
+}
+
+.container-canvas {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-color: gray;
+}
+
+
+.container-tools {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    text-align:center;
+}
+
+@media (max-width: 968px) {
+    .container {
+        text-align:center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+}
